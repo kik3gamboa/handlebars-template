@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://schema.opencerta.org/fhir/202009"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "FHIRCredential"
+  ],
+  "id": "{{ base.credentialId }}",
+  "issuer": "{{ base.issuerRef }}",
+  "issuanceDate": "{{ base.issuanceDate }}",
+  "expirationDate": "{{ base.expirationDate }}",
+  "credentialSubject": {
+    "type": "FHIRCredential",
+    "id": "{{ uppercase subject.id }}",
+    "givenName": "{{ lowercase subject.givenName }}",
+    "additionalName": "{{ onlyString subject.additionalName }}",
+    "familyName": "{{ subject.familyName }}",
+    "gender": "{{ subject.gender }}",
+    "honorificPrefix": "{{ capitalize subject.honorificPrefix }}",
+    "honorificSuffix": "{{ capitalize subject.honorificSuffix }}",
+    "photograph": "{{ subject.photograph }}",
+    "fhirVersion": "{{ fhir.version }}",
+    "fhirSource": "{{ fhir.payload }}"
+  }

@@ -1,0 +1,23 @@
+{
+  "name": "handlebars-template",
+  "version": "1.0.0",
+  "description": "testing handlebars-template",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kik3gamboa/handlebars-template.git"
+  },
+  "author": "kik3gamboa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kik3gamboa/handlebars-template/issues"
+  },
+  "homepage": "https://github.com/kik3gamboa/handlebars-template#readme"
+}
